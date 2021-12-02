@@ -403,7 +403,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 6254297855602184059, guid: dc8700463d6a50541b420a532abb1d4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -483,6 +483,18 @@ PrefabInstance:
     - target: {fileID: 636455944195520309, guid: 9d47711d49783e84a95749ce90f75dee, type: 3}
       propertyPath: m_Name
       value: Przeszkoda
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663311702982112539, guid: 9d47711d49783e84a95749ce90f75dee, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255853463294946118, guid: 9d47711d49783e84a95749ce90f75dee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255853463294946118, guid: 9d47711d49783e84a95749ce90f75dee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.225
       objectReference: {fileID: 0}
     - target: {fileID: 5962777620935197758, guid: 9d47711d49783e84a95749ce90f75dee, type: 3}
       propertyPath: m_SortingOrder

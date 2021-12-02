@@ -6,14 +6,15 @@ public class Generator : MonoBehaviour
 {
 
     public GameObject przeszkoda;
-    // Start is called before the first frame update
+  
     void Start()
     {
-        
+        InvokeRepeating("StworzPrzeszkode", 1, 3);
     }
 
     void StworzPrzeszkode()
     {
-
+        Debug.Log("Stworz przeszkode");
+        Instantiate(przeszkoda, transform.position, Quaternion.identity);
     }
 }   
