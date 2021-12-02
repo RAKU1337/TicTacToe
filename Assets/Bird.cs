@@ -21,4 +21,13 @@ public class Bird : MonoBehaviour
             rb.velocity = new Vector2(0, Force);
         }
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Kolizja: " + collision.name);
+    }
+
+
 }
+
