@@ -16,7 +16,7 @@ TextureImporter:
     second: Flappy Bird Sprites_3
   - first:
       213: 2412324547777011209
-    second: Flappy Bird Sprites_5
+    second: MartwyPtak
   - first:
       213: -2004359676323012058
     second: Flappy Bird Sprites_6
@@ -364,7 +364,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_5
+      name: MartwyPtak
       rect:
         serializedVersion: 2
         x: 386

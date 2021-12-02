@@ -7,7 +7,7 @@ public class Bird : MonoBehaviour
 
     public Rigidbody2D rb;
     public float Force;
-    // Start is called before the first frame update
+    public Sprite DeadBird;
     void Start()
     {
         
