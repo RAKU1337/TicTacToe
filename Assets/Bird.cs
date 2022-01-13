@@ -8,6 +8,8 @@ public class Bird : MonoBehaviour
     public Rigidbody2D rb;
     public float Force;
     public Sprite DeadBird;
+    public SpriteRenderer spriteRenderer;
+    public Animator anim;
     void Start()
     {
         
@@ -26,6 +28,9 @@ public class Bird : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Kolizja: " + collision.name);
+        anim.enabled = false;
+        spriteRenderer.sprite = DeadBird;
+        rb.velocity = new Vector2(0, Force);
     }
 
 
