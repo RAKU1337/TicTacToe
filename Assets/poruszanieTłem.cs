@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class przeszkoda : MonoBehaviour
+public class poruszanieTłem : MonoBehaviour
 {
 
     Vector3 direction = new Vector3(-1, 0, 0);
@@ -17,7 +17,7 @@ public class przeszkoda : MonoBehaviour
         Debug.Log(Time.deltaTime);
         transform.position += direction * Time.deltaTime;
 
-       // if (transform.position.x < -1.44)
-           // transform.position = new Vector3(0, 0, 0);
+         if (transform.position.x < -1.44)
+         transform.position = new Vector3(0, 0, 0);
     }
 }
