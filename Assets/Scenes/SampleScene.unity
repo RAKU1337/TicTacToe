@@ -560,7 +560,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 833535122}
   Force: 4
-  DeadBird: {fileID: 0}
+  DeadBird: {fileID: 2412324547777011209, guid: 55a1642533f2d954586b0c7118b1196c, type: 3}
+  spriteRenderer: {fileID: 833535120}
+  anim: {fileID: 833535119}
 --- !u!70 &833535124
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

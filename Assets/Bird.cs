@@ -10,6 +10,8 @@ public class Bird : MonoBehaviour
     public Sprite DeadBird;
     public SpriteRenderer spriteRenderer;
     public Animator anim;
+    public int punkty;
+
     void Start()
     {
         
@@ -27,10 +29,22 @@ public class Bird : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Kolizja: " + collision.name);
-        anim.enabled = false;
-        spriteRenderer.sprite = DeadBird;
-        rb.velocity = new Vector2(0, Force);
+        if (collision.gameObject.name != "Punkt")
+        {
+            Debug.Log("Kolizja: " + collision.name);
+            anim.enabled = false;
+            spriteRenderer.sprite = DeadBird;
+            rb.velocity = new Vector2(0, Force);
+        }
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "Punkt")
+        {
+            punkty++;
+        }
     }
 
 
